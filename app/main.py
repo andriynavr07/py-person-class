@@ -6,6 +6,7 @@ class Person:
         self.age = age
         Person.people[name] = self
 
+
 def create_person_list(people: list[dict]) -> list[Person]:
     person_instances = [
         Person(person_data["name"], person_data["age"])
